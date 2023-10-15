@@ -3,25 +3,33 @@
     {
       "id": 101,
       "title": "Raceing Car",
+      "name": "Beach Bum",
       "author": "Papa",
+      "price": "💵100k/per Day",
       "url": "https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2Fyc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60"
     },
     {
       "id": 102,
       "title": "Tata Nexon",
+      "name": "Green Wonder",
       "author": "Papa",
+      "price": "💵50k/per Day",
       "url": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2Fyc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60"
     },
     {
       "id": 103,
       "title": "Thar",
+      "name": "Safari",
       "author": "Papa",
+      "price": "💵10k/per Day",
       "url": "https://imgd.aeplcdn.com/370x208/n/cw/ec/40087/thar-exterior-right-front-three-quarter-35.jpeg?isig=0&q=80"
     },
     {
       "id": 104,
       "title": "Mohendra",
+      "name": "Haven",
       "author": "Papa",
+      "price": "💵20k/per Day",
       "url": "https://imgd.aeplcdn.com/370x208/n/cw/ec/26918/xuv300-exterior-right-front-three-quarter-148709.jpeg?isig=0&q=80"
     }
   ]

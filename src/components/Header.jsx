@@ -10,7 +10,7 @@ function Header() {
     <header>
       <Link to="/">#VanLife</Link>
       <nav className="nav">
-        <NavLink to="/" style={({isActive}) => isActive ? activeStyle : null}>Host</NavLink>
+        <NavLink to="/host" style={({isActive}) => isActive ? activeStyle : null}>Host</NavLink>
         <NavLink to="/about" style={({isActive}) => isActive ? activeStyle : null}>About</NavLink>
         <NavLink to="/vans" style={({isActive}) => isActive ? activeStyle : null}>Vans</NavLink>
       </nav>
