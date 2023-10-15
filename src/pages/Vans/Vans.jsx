@@ -28,16 +28,18 @@ function Vans() {
 
   const dispalyVans = typeFilter ? vens.filter((van) => van.type === typeFilter) : vens
   console.log("1", searchParam.toString());
-  
+
   return (
     <div>
       <h3>Explore our Vans options</h3>
       <button onClick={() => setSearchParam({type: "tour"})}>Tour</button>
+      <button onClick={() => setSearchParam({type: "simple"})}>Simple</button>
+      <button onClick={() => setSearchParam({type: "luxury"})}>luxury</button>
       <Link to=".." relative="path">&larr;<span>Back to all Vens</span></Link>
       <ul>
         {dispalyVans?.map((item) => (
           <div key={item.id}>
-            <Link to={item.id} state={{search: searchParam.toString()}}>
+            <Link to={item.id} state={{search: `${searchParam.toString()}`}}>
               <img src={item.url} alt="img" />
               <li> {item.title}</li>
             </Link>
