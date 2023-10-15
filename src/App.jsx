@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 import Home from "./pages/Home";
-import Vans from "./pages/Vans";
-import VanDetails from "./pages/VanDetails";
+import Vans from "./pages/Vans/Vans";
+import VanDetails from "./pages/Vans/VanDetails";
 import Layout from "./components/Layout";
 import Dashboard from "./pages/Host/Dashboard";
 import Income from "./pages/Host/Income";
