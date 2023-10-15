@@ -1,7 +1,7 @@
 import { Route } from "react-router-dom";
 import About from "./pages/About";
 import Home from "./pages/Home";
-import Vans, {loader as vansLoader} from "./pages/Vans/Vans";
+import Vans, { loader as vansLoader } from "./pages/Vans/Vans";
 import VanDetails from "./pages/Vans/VanDetails";
 import Layout from "./components/Layout";
 import Dashboard from "./pages/Host/Dashboard";
@@ -19,37 +19,37 @@ import NotFound from "./pages/NotFound";
 import { createBrowserRouter } from "react-router-dom";
 import { createRoutesFromElements } from "react-router-dom";
 import { RouterProvider } from "react-router-dom";
+import Error from "./components/Error";
 
-const router = createBrowserRouter(createRoutesFromElements(
-  <Route path="/" element={<Layout />}>
-  <Route  index element={<Home />} />
-  <Route path="about" element={<About />} />
-  <Route path="vans" element={<Vans />} loader={vansLoader} />
-  <Route path="vans/:id" element={<VanDetails />} />
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Layout />}>
+      <Route index element={<Home />} />
+      <Route path="about" element={<About />} />
+      <Route path="vans" element={<Vans />} loader={vansLoader} errorElement={<Error />}/>
+      <Route path="vans/:id" element={<VanDetails />} />
 
-  <Route path="host"  element={<HostLayout />}>
-    <Route index element={<Dashboard />}/>
-    <Route path="income" element={<Income />} />
-    <Route path="reviews" element={<Reviews />} />
-    <Route path="vans" element={<HostVans />} />
-    <Route path="vans/:id" element={<HostVanDetails />} >
-      <Route index element={<HostVanInfo />}/>
-      <Route path="pricing" element={<HostVanPricing />}/>
-      <Route  path="photos" element={<HostVanPhotos />}/>
+      <Route path="host" element={<HostLayout />}>
+        <Route index element={<Dashboard />} />
+        <Route path="income" element={<Income />} />
+        <Route path="reviews" element={<Reviews />} />
+        <Route path="vans" element={<HostVans />} />
+        <Route path="vans/:id" element={<HostVanDetails />}>
+          <Route index element={<HostVanInfo />} />
+          <Route path="pricing" element={<HostVanPricing />} />
+          <Route path="photos" element={<HostVanPhotos />} />
+        </Route>
+      </Route>
+      <Route path="*" element={<NotFound />} />
     </Route>
-  </Route>
-  <Route path="*" element={<NotFound />}/>
-</Route>
-))
+  )
+);
 
 function App() {
-  return (
-    <RouterProvider router={router} />
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
-
 
 //1. Why we used nested route ?
 // Whenwver we have shared UI b/w routes in our application that time we used nested route.

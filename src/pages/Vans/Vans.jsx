@@ -10,7 +10,10 @@ const fetchData = async () => {
     const data = response?.data;
     return data;
   } catch (error) {
-    console.error("Error Message: ", error);
+    throw {
+      message: "Failed to fetch Vens!", 
+      errors: error.message
+    }
   }
 };
 
