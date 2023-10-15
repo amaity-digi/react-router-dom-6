@@ -1,25 +1,25 @@
 import axios from "axios";
-import { useEffect } from "react";
-import { useState } from "react";
+import { useLoaderData } from "react-router-dom";
 import { Link } from "react-router-dom";
 
+const fetchData = async () => {
+  try {
+    const response = await axios.get(
+      "http://localhost:3000/vens"
+    );
+    const data = response?.data;
+     return data;
+  } catch (error) {
+    console.error("Error Message: ", error);
+  }
+};
+
+export function loader(){
+  return fetchData();
+}
+
 function HostVans() {
-  const [vens, setVens] = useState("");
-  const fetchData = async () => {
-    try {
-      const response = await axios.get(
-        "http://localhost:3000/vens"
-      );
-      const data = response?.data;
-      setVens(data);
-      console.log(data);
-    } catch (error) {
-      console.error("Error Message: ", error);
-    }
-  };
-  useEffect(() => {
-    fetchData();
-  }, []);
+  const vens = useLoaderData();
 
   return (
     <div>
