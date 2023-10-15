@@ -6,6 +6,7 @@
       "name": "Beach Bum",
       "author": "Papa",
       "price": "💵100k/per Day",
+      "description": "The 'Beach Bum' racing car is the ultimate choice for adrenaline junkies and speed enthusiasts. With its sleek design, powerful engine, and high-performance features, it's designed to deliver an exhilarating racing experience on the track. Strap in and get ready for an unforgettable ride!",
       "url": "https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2Fyc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60"
     },
     {
@@ -14,6 +15,7 @@
       "name": "Green Wonder",
       "author": "Papa",
       "price": "💵50k/per Day",
+      "description": "The Tata Nexon 'Green Wonder' is an eco-friendly and stylish compact SUV, known for its impressive fuel efficiency, modern features, and comfortable interior. With its striking design and a range of safety features, this car is perfect for your next adventure.",
       "url": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2Fyc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60"
     },
     {
@@ -22,6 +24,7 @@
       "name": "Safari",
       "author": "Papa",
       "price": "💵10k/per Day",
+      "description": "The 'Thar Safari' is a rugged and versatile off-road vehicle designed to tackle the most challenging terrains. With its iconic design and robust performance, it's the perfect choice for adventurers seeking thrilling outdoor experiences. Explore the wilderness with confidence and style in this legendary SUV.",
       "url": "https://imgd.aeplcdn.com/370x208/n/cw/ec/40087/thar-exterior-right-front-three-quarter-35.jpeg?isig=0&q=80"
     },
     {
@@ -30,6 +33,7 @@
       "name": "Haven",
       "author": "Papa",
       "price": "💵20k/per Day",
+      "description": "The 'Mahindra Haven' is a premium SUV that combines elegance and performance. With its sleek and modern design, advanced features, and comfortable interior, it provides a luxurious driving experience. Whether you're navigating city streets or embarking on a road trip, the Mahindra Haven ensures a smooth and enjoyable ride.",
       "url": "https://imgd.aeplcdn.com/370x208/n/cw/ec/26918/xuv300-exterior-right-front-three-quarter-148709.jpeg?isig=0&q=80"
     }
   ]
